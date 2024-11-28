@@ -1,0 +1,290 @@
+.formOrder {
+    width: 70%;
+    height: 800px;
+    margin: 100px auto;
+    border-radius: 30px;
+    background-color: #1c73d0;
+
+    @media (max-width: 1700px) {
+        width: 80%;
+        height: 950px;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
+        height: 750px;
+    }
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        @media (max-width: 1300px) {
+            justify-content: center;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 50%;
+        text-align: center;
+
+        .error {
+            color: #f76969;
+            top: -5px;
+            left: 150px;
+            font-size: 16px;
+            position: absolute;
+
+            &-comment {
+                top: 210px;
+                left: 50px;
+
+                @media (max-width: 1450px) {
+                    top: 320px;
+                }
+                @media (max-width: 768px) {
+                    top: 235px;
+                }
+            }
+
+            @media (max-width: 1450px) {
+                left: 50px;
+            }
+            @media (max-width: 1300px) {
+                left: 100px;
+            }
+            @media (max-width: 768px) {
+                font-size: 14px;
+                left: 30%;
+            }
+            @media (max-width: 440px) {
+                left: 20%;
+            }
+        }
+
+        @media (max-width: 1450px) {
+            text-align: center;
+            width: 50%;
+        }
+        @media (max-width: 1300px) {
+            position: absolute;
+            z-index: 1;
+            opacity: 0.1;
+
+            img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+
+        &:first-child {
+            width: 60%;
+
+            @media (max-width: 1450px) {
+                width: 50%;
+            }
+            @media (max-width: 1300px) {
+                display: block;
+                z-index: 999;
+                opacity: 1;
+            }
+            @media (max-width: 992px) {
+                width: 60%;
+            }
+
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+        }
+
+        img {
+            pointer-events: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+    }
+
+    &__block {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .error {
+            color: #f76969;
+            font-size: 16px;
+            position: absolute;
+            display: flex;
+
+            &-email {
+                top: -10px;
+                left: 50px;
+
+                @media (max-width: 1300px) {
+                    left: 100px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    top: -5px;
+                    left: 30%;
+                }
+                @media (max-width: 440px) {
+                    left: 20%;
+                }
+            }
+
+            &-phone {
+                left: auto;
+                top: -10px;
+                right: 50px;
+
+                @media (max-width: 1450px) {
+                    top: 100px;
+                    right: 0;
+                    left: 50px;
+                }
+                @media (max-width: 1300px) {
+                    left: 100px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    top: 75px;
+                    left: 30%;
+                }
+                @media (max-width: 440px) {
+                    left: 20%;
+                }
+            }
+        }
+
+        @media (max-width: 1450px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.formInput {
+    width: 420px;
+    height: 70px;
+    font-size: 28px;
+    color: #3e3e3e;
+    padding: 20px;
+    margin-block: 20px;
+    border-radius: 50px;
+    background-color: #ececec;
+
+    &::placeholder {
+        font-size: 28px;
+        color: #3e3e3e;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &-modal {
+        font-size: 26px;
+
+        @media (max-width: 1192px) {
+            font-size: 24px;
+            margin-block: 10px;
+        }
+
+        &::placeholder {
+            font-size: 26px;
+
+            @media (max-width: 1192px) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        font-size: 20px;
+    }
+    @media (max-width: 768px) {
+        height: 50px;
+        padding: 20px;
+        margin-block: 15px;
+        width: 300px;
+    }
+
+    &-short {
+        width: 250px;
+
+        @media (max-width: 1450px) {
+            width: 400px;
+        }
+
+        @media (max-width: 768px) {
+            width: 300px;
+        }
+    }
+
+    &-comment {
+        border-radius: 25px;
+        padding: 20px;
+        resize: none;
+        width: 500px;
+        height: 200px;
+
+        @media (max-width: 1700px) {
+            width: 400px;
+            height: 220px;
+        }
+        @media (max-width: 768px) {
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+
+}
+input:focus,
+select:focus,
+option:focus,
+textarea:focus,
+button:focus {
+    outline: #f76969 solid 3px;
+    transition: all 0.2s ease;
+}
+.formButton {
+    margin: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #f76969;
+    transition: all 0.5s ease;
+
+    @media (max-width: 992px) {
+        width: 300px;
+        font-size: 24px;
+    }
+    @media (max-width: 768px) {
+        width: 270px;
+        padding: 15px;
+    }
+    @media (max-width: 440px) {
+        width: 250px;
+    }
+
+    &:hover {
+        background-color: #e03f3f;
+        // box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, .5);
+    }
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Цветочный магазин "Баггерия"</title>
+        <link rel="stylesheet" href="./scss/style.css" />
+    </head>
+    <body>
+        <div className="mobileMenu" id='mobileMenu'>
+            <input 
+                type="checkbox" 
+                id="burger-toggle" 
+            />
+            <label
+                for="burger-toggle"
+                class="burger__label"
+                id='burger__label'
+            >
+                <span></span>
+            </label>
+            <div id='test'>
+                <a href="/#about" class="link link-header">О нас</a>
+                <a href="/#assortment" class="link link-header">Цветы</a>
+                <a href="/#formOrder" class="link link-header">Заказать</a>
+                <a href="/#reviews" class="link link-header">Отзывы</a>
+                <a href="/#contacts" class="link link-header">Контакты</a>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#">
+                        <img class="logo" src="./img/logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <div class="nav__links">
+                    <a href="#about" class="link link-header">О нас</a>
+                    <a href="#assortment" class="link link-header">Цветы</a>
+                    <a href="#formOrder" class="link link-header">Заказать</a>
+                    <a href="#reviews" class="link link-header">Отзывы</a>
+                    <a href="#contacts" class="link link-header">Контакты</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="offer">
+            <div class="offer__container">
+                <div class="offer__background">
+                    <img src="./img/Background.png" alt="Background" />
+                </div>
+                <div class="offer__main">
+                    <div class="offer__block">
+                        <h1 class="title title-offer">Магазин Баггерия</h1>
+                        <h2 class="subtitle subtitle-offer">
+                            Мы предлагаем широкий выбор цветов, новинок, удобную
+                            доставку и качественное исполнение! Множество
+                            клиентов довольны нашим магазином.
+                        </h2>
+                        <button class="offer__button">
+                            <a href="#formOrder" class="offer__link"
+                                >Ассортимент</a
+                            >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="main">
+            <section class="about" id="about">
+                <h1 class="title">О магазине "Баггерия"</h1>
+                <div class="about__container">
+                    <div class="about__description about__description-right">
+                        <h2 class="subtitle">Широчайший ассортимент</h2>
+                        <p class="text">
+                            Наш магазин цветов "Баггерия" предлагает широкий
+                            ассортимент букетов и композиций для любого повода:
+                            свадьбы, дни рождения, юбилеи и просто для поднятия
+                            настроения. Мы гордимся качеством наших цветов и
+                            оригинальными идеями оформления.
+                        </p>
+                    </div>
+                    <div class="about__image about__image-left">
+                        <img src="./img/Offer1.png" alt="Offer1" />
+                    </div>
+                </div>
+
+                <div class="about__container">
+                    <div class="about__image about__image-right">
+                        <img src="./img/Offer1.png" alt="Offer1" />
+                    </div>
+                    <div class="about__description about__description-left">
+                        <h2 class="subtitle">Выбор идеального подарка</h2>
+                        <p class="text">
+                            Мы готовы помочь вам выбрать идеальный цветочный
+                            подарок, который подчеркнет ваши чувства и сделает
+                            любой момент особенным. Закажите доставку прямо к
+                            двери или посетите наш уютный магазин, где вас ждут
+                            вдохновение и красота.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <div class="advantages__container">
+                    <h1 class="title">Почему именно мы?</h1>
+                    <div class="advantages__grid">
+                        <div class="advantages__block">
+                            <hr class="advantages__hr" />
+                            <div class="advantages__title">
+                                <div class="advantages__block-container">
+                                    <img
+                                        src="./img/advantages_1.png"
+                                        alt="advantages_1"
+                                    />
+                                </div>
+                                <div class="advantages__block-container">
+                                    <h2 class="subtitle subtitle-advantages">
+                                        Широкий ассортимент
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="advantages__description">
+                                <p class="text text-advantages">
+                                    Огромнейшее количество разнообразных видов
+                                    цветов.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__block">
+                            <hr class="advantages__hr" />
+                            <div class="advantages__title">
+                                <div class="advantages__block-container">
+                                    <img
+                                        src="./img/advantages_2.png"
+                                        alt="advantages_2"
+                                    />
+                                </div>
+                                <div class="advantages__block-container">
+                                    <h2 class="subtitle subtitle-advantages">
+                                        Быстрые сроки доставки
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="advantages__description">
+                                <p class="text text-advantages">
+                                    Доставка цветов куда угодно в течение
+                                    недели.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__block">
+                            <hr class="advantages__hr" />
+                            <div class="advantages__title">
+                                <div class="advantages__block-container">
+                                    <img
+                                        src="./img/advantages_3.png"
+                                        alt="advantages_3"
+                                    />
+                                </div>
+                                <div class="advantages__block-container">
+                                    <h2 class="subtitle subtitle-advantages">
+                                        Низкие цены
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="advantages__description">
+                                <p class="text text-advantages">
+                                    Доступные цены для отличного подарка.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="assortment" id="assortment">
+                <h1 class="title">Ассортимент</h1>
+                <div class="assortment__container">
+                    <div class="bouquet">
+                        <img src="./img/bouquet1.png" alt="" />
+                        <h2 class="bouquet__title">Букет роз</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                9 белых импортных роз с шикарным бутоном.
+                                Бессмертная классика.
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                    <div class="bouquet">
+                        <img src="./img/bouquet2.png" alt="" />
+                        <h2 class="bouquet__title">Букет соблазна</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                Какая леди не любит красоту? Невозможно устоять!
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                    <div class="bouquet">
+                        <img src="./img/bouquet3.png" alt="" />
+                        <h2 class="bouquet__title">Букет сладости</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                Сладость ранним утром - что может быть
+                                прекраснее?
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                    <div class="bouquet">
+                        <img src="./img/bouquet4.png" alt="" />
+                        <h2 class="bouquet__title">Букет королевы</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                Пышный, белый дизайн. Невозможно не обратить
+                                внимание!
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                    <div class="bouquet">
+                        <img src="./img/bouquet5.png" alt="" />
+                        <h2 class="bouquet__title">Букет любви</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                Любовь — это единственное доступное нам чувство,
+                                способное выйти за пределы времени и
+                                пространства.
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                    <div class="bouquet">
+                        <img src="./img/bouquet6.png" alt="" />
+                        <h2 class="bouquet__title">Букет принцессы</h2>
+                        <div class="bouquet__div">
+                            <p class="bouquet__text">
+                                Только для настоящих принцесс!
+                            </p>
+                        </div>
+
+                        <button class="offer__button">
+                            <a href="#" class="offer__link">Расчет</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form" id="formOrder">
+                <form class="formOrder" action="" method="get" target="_blank">
+                    <h1 class="title title-form">Попробуй и ты!</h1>
+                    <div class="formOrder__container">
+                        <div class="formOrder__inner">
+                            <input
+                                type="text"
+                                placeholder="Фамилия, Имя, Отчество"
+                                name="name"
+                                id="name"
+                                class="formInput"
+                                required
+                            />
+                            <div class="formOrder__block">
+                                <input
+                                    type="email"
+                                    placeholder="E-mail"
+                                    name="email"
+                                    id="email"
+                                    class="formInput formInput-short"
+                                required
+
+                                />
+                                <input
+                                    type="tel"
+                                    placeholder="Телефон"
+                                    name="phone"
+                                    id="phone"
+                                    class="formInput formInput-short"
+                                required
+
+                                />
+                            </div>
+
+                            <textarea
+                                type="select"
+                                placeholder="Краткий комментарий"
+                                name="comment"
+                                id="comment"
+                                maxlength="{100}"
+                                class="formInput formInput-comment"
+                                required
+                            ></textarea>
+
+                            <button class="formButton" type="submit">
+                                Заказать
+                            </button>
+                            <p class="text text-form">
+                                Нажимая кнопку, Вы согласны на обработку
+                                <a href="#">персональных данных</a>
+                            </p>
+                        </div>
+                        <div class="formOrder__inner">
+                            <img src="./img/form_image.png" alt="form_image" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="reviews" id="reviews">
+                <h1 class="title">Отзывы наших клиентов</h1>
+                <div class="reviews__container">
+                    <div class="review">
+                        <div class="review__img">
+                            <img src="./img/review1.png" alt="">
+                        </div>
+                        <div class="review__description">
+                            <h2 class="review__title">Захар Тюлькин</h2>
+                            <p class="review__text">Хочу поблагодарить Вас за прекрасные букеты! Теперь моя жена просто сходит с ума. Уверенные 5 звёзд!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__img">
+                            <img src="./img/review2.png" alt="">
+                        </div>
+                        <div class="review__description">
+                            <h2 class="review__title">Владимир Рогалев</h2>
+                            <p class="review__text">Говорю большое спасибо за разработанный дизайн букетов. Через 3 месяца они до сих пор цветут и пахнут!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__img">
+                            <img src="./img/review3.png" alt="">
+                        </div>
+                        <div class="review__description">
+                            <h2 class="review__title">Родион Истомин</h2>
+                            <p class="review__text">Благодарю за поставки букетов цветов!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__img">
+                            <img src="./img/review4.png" alt="">
+                        </div>
+                        <div class="review__description">
+                            <h2 class="review__title">Милана Морозова</h2>
+                            <p class="review__text">Очень хорошие цветы у вас! Мы на протяжении 5 лет пользуемся вашим магазином и всё прекрасно! СПАСИБО!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts" id="contacts">
+                <h1 class="title">Контакты</h1>
+                <p class="text text-contacts">
+                    Вологда, Советский проспект, 113Б
+                </p>
+                <div class="contacts__container">
+                    <a
+                        href="#"
+                        class="contacts__button"
+                        target="_blank"
+                        >Подписаться на VK</a
+                    >
+                    <a
+                        href="tel:+7 (123) 456-78-90"
+                        class="contacts__button"
+                        target="_blank"
+                        >+7 (123) 456-78-90</a
+                    >
+                    <a
+                        href="#"
+                        class="contacts__button"
+                        target="_blank"
+                        >Как доехать</a
+                    >
+                    <a
+                        href="#"
+                        class="contacts__button"
+                        target="_blank"
+                        >Написать</a
+                    >
+                    <a
+                        href="#"
+                        class="contacts__button"
+                        target="_blank"
+                        >WhatsApp</a
+                    >
+                </div>
+
+                <div class="contacts__map">
+                    <img src="./img/map.png" alt="">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="nav__links nav__links-footer">
+                    <a href="/#about" class="link link-footer">О нас</a>
+                    <a href="/#assortment" class="link link-footer">Цветы</a>
+                    <a href="/#formOrder" class="link link-footer">Заказать</a>
+                    <a href="/#reviews" class="link link-footer">Отзывы</a>
+                    <a href="/#contacts" class="link link-footer">Контакты</a>
+                    <div class="footer__eq">                    <a
+                        href="tel:+71234567889"
+                        class="link link-footer"
+                        target="_blank"
+                        >+7 (123) 456-78-89</a
+                    >
+                    <a
+                        href="mailto:shopBaggeria@mail.ru"
+                        class="link link-footer"
+                        target="_blank"
+                        >shopBaggeria@mail.ru</a
+                    ></div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/mobile.js"></script>
+    </body>
+</html>
